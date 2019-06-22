@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="dita-ot/plugin.rnc" type="application/relax-ng-compact-syntax"?>
+
+<!--             Copyright 2019 Lief Erickson                 -->
+<!-- See the accompanying LICENSE file for applicable license -->
+
+<plugin id="org.lief.fop.index.collapse">
+  <feature extension="package.version" value="0.1.0"/>
+  <require plugin="org.dita.pdf2"/>
+  <require plugin="org.dita.pdf2.fop"/>
+  <transtype name="fop.index.collapse" extends="pdf" desc="DITA-OT/FOP Remove Extra Index Spacing"/>
+  <feature extension="dita.transtype.print" value="fop.index.collapse"/>
+  <feature extension="ant.import" file="integrator.xml"/>
+</plugin>

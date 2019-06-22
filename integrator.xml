@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--             Copyright 2019 Lief Erickson                 -->
+<!-- See the accompanying LICENSE file for applicable license -->
+
+<project>
+  <target name="dita2fop.index.collapse" depends="dita2fop.index.collapse.init, dita2pdf2"/>
+  <target name="dita2fop.index.collapse.init">
+    <property name="customization.dir" location="${dita.plugin.org.lief.fop.index.collapse.dir}/cfg"/>
+  </target>
+</project>
